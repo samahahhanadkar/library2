@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int marks[5], temp;
+
+    cout<<"Enter marks of 5 students:\n";
+
+    for(int i=0;i<5;i++)
+    {
+        cin>>marks[i];
+    }
+
+    for(int i=0;i<5;i++)
+    {
+        for(int j=i+1;j<5;j++)
+        {
+            if(marks[i]<marks[j])
+            {
+                temp=marks[i];
+                marks[i]=marks[j];
+                marks[j]=temp;
+            }
+        }
+    }
+
+    cout<<"Marks in descending order:\n";
+
+    for(int i=0;i<5;i++)
+    {
+        cout<<marks[i]<<"\n";
+    }
+
+    return 0;
+}
