@@ -16,9 +16,6 @@ int main()
         rear++;
     }
 
-    // Process orders
-    cout << "\nProcessing Order: " << queue[front] << endl;
-
     while (front < rear)
     {
         cout << "Processing Order: " << queue[front] << endl;
